@@ -36,19 +36,15 @@ class TodoEdit extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 // ignore: deprecated_member_use
-                RaisedButton(
+                TextButton(
                   child: const Text('Cancel'),
-                  color: Colors.red,
-                  textColor: Colors.white,
                   onPressed: () {
                     Get.back();
                   },
                 ),
                 // ignore: deprecated_member_use
-                RaisedButton(
+                TextButton(
                   child: const Text('Update'),
-                  color: Colors.green,
-                  textColor: Colors.white,
                   onPressed: () {
                     var editing = todoController.todos[index!];
                     editing.text = textEditingController.text;

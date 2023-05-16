@@ -10,7 +10,7 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-  static const String title = 'Getx Todo';
+  static const String title = 'Flutter Todo Getx';
 
   const MyApp({Key? key}) : super(key: key);
   @override

@@ -1,4 +1,4 @@
-package com.example.todo_getx
+package com.fclarke.todogetx
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -15,7 +15,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(MyApp.title),
+        title: const Text(MyApp.title),
         centerTitle: true,
       ),
       floatingActionButton: FloatingActionButton(
@@ -39,7 +39,7 @@ class HomeScreen extends StatelessWidget {
             ),
             onDismissed: (_) {
               todoController.todos.removeAt(index);
-              Get.snackbar('Remove!', "Task was succesfully Delete",
+              Get.snackbar('Remove!', "Task was successfully Delete",
                   snackPosition: SnackPosition.BOTTOM);
             },
             child: ListTile(
