@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:get/get.dart';
+import 'package:todo_getx/ui/auth_screen.dart';
 import 'package:todo_getx/ui/home_screen.dart';
 import 'package:todo_getx/ui/todo_screen.dart';
 
@@ -19,10 +20,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.deepOrange),
       title: title,
       debugShowCheckedModeBanner: false,
-      initialRoute: HomeScreen.id,
+      initialRoute: AuthPage.id,
       getPages: [
         GetPage(name: TodoScreen.id, page: () => TodoScreen()),
         GetPage(name: HomeScreen.id, page: () => HomeScreen()),
+        GetPage(name: AuthPage.id, page: () => const AuthPage()),
       ],
     );
   }
